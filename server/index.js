@@ -16,6 +16,6 @@ app.use("/user", userRouters);
 
 const port = process.env.PORT || 8080;
 
-app.app.listen(port, () => {
+app.listen(port, () => {
   console.log(`Listening to Port ${port}`);
 });
