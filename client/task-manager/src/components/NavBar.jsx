@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { useUser } from "../context/UserContext";
 
 const NavBar = () => {
-  const { isLoggedIn, setisLoggedIn, user, setUser } = useUser();
-
-  console.log(isLoggedIn);
+  const { isLoggedIn, setisLoggedIn } = useUser();
 
   const handlelogout = () => {
     setisLoggedIn(false);

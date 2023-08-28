@@ -3,7 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 
 export const config = {
-  endpoint: `http://127.0.0.1:3001`,
+  endpoint: `https://task-management-app-ydrf.onrender.com`,
 };
 
 function App() {

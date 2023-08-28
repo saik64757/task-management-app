@@ -28,14 +28,14 @@ function Registration() {
         `${config.endpoint}/user/register`,
         userDetails
       );
-      console.log(user);
+
       if (user.status === 200) {
         toast.success("User Register Successfully");
         navigate("/login");
       }
     } catch (error) {
       toast.error(error.message);
-      console.log(error);
+
     }
   }
 

@@ -37,8 +37,6 @@ function TasksList() {
     fetchData();
   }, [setTasks, token]);
 
-  console.log(tasks);
-
   return (
     <div className="flex justify-center align-middle flex-col gap-4">
       <div className="mt-8s text-2xl w-9/12 text-center">TasksList</div>
