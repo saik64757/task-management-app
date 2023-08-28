@@ -43,8 +43,8 @@ const loginUser = async (req, res) => {
       return res.status(401).json("Invalid Email or Password");
     }
     const token = await generateToken(user);
-    console.log(token);
-    res.status(200).send({ data: token, message: "Logged in successfully" });
+
+    res.status(200).send({ token: token, message: "Logged in successfully" });
   } catch (error) {
     res.status(500).send({ message: "Internal Server Error" });
   }
@@ -58,7 +58,7 @@ const getALLUsers = async (req, res) => {
     }
     res.status(200).json({ users });
   } catch (error) {
-    res.status(500).json(error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
