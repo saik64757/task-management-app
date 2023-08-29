@@ -28,6 +28,7 @@ function Login() {
         toast.success("User Login Successfully");
       }
       localStorage.setItem("token", JSON.stringify(user?.data?.token));
+
       setUser(user);
       setisLoggedIn(true);
       navigate("/tasks");
