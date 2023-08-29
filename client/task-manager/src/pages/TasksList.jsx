@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { config } from "../App";
-import { useUser } from "../context/UserContext";
 import { useList } from "../context/ListContext";
 import Taskform from "../components/Taskform";
 import Listitem from "../components/Listitem";
