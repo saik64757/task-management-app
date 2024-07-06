@@ -35,6 +35,7 @@ function EditTask({ task, tasks, setTasks, taskId }) {
         return task;
       });
       setTasks(newTaskList);
+      console.log(tasks)
     } catch (error) {
       toast.error(error.response);
     }
